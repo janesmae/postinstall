@@ -10,8 +10,6 @@ USER_SSH_KEY='ssh-ed25519 AAAA...' # Users public ssh key
 
 #------------------------------------------------------------------------------#
 
-if [ "$USER_SSH_KEY" == "ssh-ed25519 AAAA..." ] ; then echo "Please add your ssh key" 1>&2 && exit 1 ; fi
-
 # This script must be run as root
 if [[ $EUID -ne 0 ]]; then
     echo "This script must be run as root" 1>&2
